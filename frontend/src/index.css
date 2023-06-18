@@ -1,0 +1,39 @@
+/* ----------------------------- 
+        RESET
+----------------------------- */
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ----------------------------- 
+        GLOBAL
+----------------------------- */
+
+:root {
+  --main-color: #e62633;
+  --dark-color: #181817;
+}
+
+body {
+  background: #e62633;
+  color: black;
+  font-family: "Inter", sans-serif;
+}
