@@ -8,9 +8,11 @@ body {
   left: 0;
   overflow: hidden;
   right: 0;
-  border-bottom: 100px solid #342a2a;
   height: 800px;
+  pointer-events: none; /* Add this line */
+  background-color: transparent; /* Add this line */
 }
+
 .scene > div {
   position: absolute;
   bottom: 0;
