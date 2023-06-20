@@ -9,22 +9,14 @@ export default {
     themes: [
       {
         sustainable: {
-          primary: "#606c38",
-
-          secondary: "#283618",
-
-          accent: "#dda15e",
-
-          neutral: "#fefae0",
-
-          "base-100": "#f8fafb",
-
+          primary: "#E87E41",
+          secondary: "#89DBD7",
+          accent: "#FFB33A",
+          neutral: "#1DB57B",
+          base: "#89DBD7",
           info: "#25cef4",
-
           success: "#1f8974",
-
           warning: "#c98f08",
-
           error: "#eb2b19",
         },
       },
