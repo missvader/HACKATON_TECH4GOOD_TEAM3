@@ -33,22 +33,28 @@ public class Controller {
         if(nomActivitat !=null){
         list.add(localsRepo.findByNomActivitat(nomActivitat));
         }
-        if(bars !=null){
-            list.add(localsRepo.findByNomActivitat(bars));
-        }if(nomActivitat !=null){
-            list.add(localsRepo.findByNomActivitat(nomActivitat));
-        }if(nomActivitat !=null){
-            list.add(localsRepo.findByNomActivitat(nomActivitat));
-        }if(nomActivitat !=null){
-            list.add(localsRepo.findByNomActivitat(nomActivitat));
-        }if(nomActivitat !=null){
-            list.add(localsRepo.findByNomActivitat(nomActivitat));
-        }if(nomActivitat !=null){
-            list.add(localsRepo.findByNomActivitat(nomActivitat));
+        if(nomSectorActivitat !=null){
+            list.add(localsRepo.findByNomActivitat(nomSectorActivitat));
+        }if(nomGrupActivitat !=null){
+            list.add(localsRepo.findByNomActivitat(nomGrupActivitat));
+        }if(nomLocal !=null){
+            list.add(localsRepo.findByNomActivitat(nomLocal));
+        }if(sNEix !=null){
+            list.add(localsRepo.findByNomActivitat(sNEix));
+        }if(latitud !=null){
+            list.add(localsRepo.findByNomActivitat(latitud));
+        }if(longitud !=null){
+            list.add(localsRepo.findByNomActivitat(longitud));
         }
-
-
-
+        if(direccioUnica !=null){
+            list.add(localsRepo.findByNomActivitat(direccioUnica));
+        }if(nomVia !=null){
+            list.add(localsRepo.findByNomActivitat(nomVia));
+        }if(nomBarri !=null){
+            list.add(localsRepo.findByNomActivitat(nomBarri));
+        }if(nomDistricte !=null){
+            list.add(localsRepo.findByNomActivitat(nomDistricte));
+        }
 
         return list;
 
