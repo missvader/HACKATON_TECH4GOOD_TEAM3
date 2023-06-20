@@ -9,11 +9,11 @@ export default {
     themes: [
       {
         sustainable: {
-          primary: "#8fb860",
-          secondary: "#B3C186",
-          accent: "#E6B081",
-          neutral: "#EDCEAA",
-          "base-100": "#FFFCEF",
+          primary: "#1DB57B",
+          secondary: "#89DBD7",
+          accent: "#E87E41",
+          neutral: "#EBCD63",
+          "base-100": "#FFFFFF",
           info: "#25cef4",
           success: "#1f8974",
           warning: "#c98f08",

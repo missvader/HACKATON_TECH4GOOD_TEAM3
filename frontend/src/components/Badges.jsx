@@ -13,9 +13,9 @@ const Badges = () => {
       <div className="badge badge-primary">CARNISSERIA</div>
       <div className="badge badge-secondary">FRUITES I VERDURES</div>
       <div className="badge badge-accent">PEIX</div>
-      <div className="badge badge-ghost">JOIERIA</div>
-      <div className="badge badge-outline">EQUIPAMENT LLAR</div>
-      <div className="badge ">CALÇAT</div>
+      <div className="badge badge-primary">JOIERIA</div>
+      <div className="badge badge-neutral">EQUIPAMENT LLAR</div>
+      <div className="badge badge-secondary ">CALÇAT</div>
     </div>
   );
 };
