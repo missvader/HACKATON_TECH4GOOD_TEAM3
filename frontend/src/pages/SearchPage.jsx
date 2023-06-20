@@ -74,11 +74,8 @@ const SearchPage = () => {
 
   return (
     <div className="search-page-container bg-white">
-      <h6 className="text-3xl text-black m-5 p-5">Què busques?</h6>
+      <h1 className="text-4xl m-5 p-5">Què busques?</h1>
       <Search />
-      {/*{users.map((user) => (
-        <p key={user._id}>{user.name}</p>
-      ))}*/}
       <div className=" gap-4 mt-5 col-span-2">
         {data.map((data) => (
           <div

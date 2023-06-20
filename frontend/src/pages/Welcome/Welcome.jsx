@@ -11,7 +11,7 @@ const Welcome = () => {
     const options = {
       strings: [
         "La sostenibilitat comença a prop teu",
-        "Sustainability starts close to you",
+        "Sustainability starts near you",
         "La sostenibilidad comienza cerca de ti",
       ],
       typeSpeed: 100,
@@ -36,7 +36,7 @@ const Welcome = () => {
           </h1>
           <div className="button-container">
             <Link to="/search">
-              <button className="btn btn-lg btn-primary welcome-button shadow-xl">
+              <button className="btn btn-lg btn-neutral welcome-button shadow-xl">
                 cerca
               </button>
             </Link>

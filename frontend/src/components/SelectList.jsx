@@ -1,6 +1,6 @@
 const SelectList = () => {
   return (
-    <select className="select select-bordered w-full max-w-xs">
+    <select className="select select-bordered border-primary w-full max-w-xs">
       <option disabled selected>
         Selecciona el teu barri:
       </option>
