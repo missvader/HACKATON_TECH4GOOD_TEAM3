@@ -1,5 +1,5 @@
 package cat.tech4good.team3.config;
 
 
-public class Config {
+public class Swagger {
 }
