@@ -1,18 +1,21 @@
 .welcome-container {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .welcome-title {
   color: #e87e41;
   font-size: 50px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .welcome-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   margin-top: 150px;
   width: 80%;

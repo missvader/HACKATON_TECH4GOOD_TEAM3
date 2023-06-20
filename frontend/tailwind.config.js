@@ -11,9 +11,9 @@ export default {
         sustainable: {
           primary: "#E87E41",
           secondary: "#89DBD7",
-          accent: "#FFB33A",
+          accent: "#1DB57B",
           neutral: "#1DB57B",
-          base: "#89DBD7",
+          "base-100": "#fffff",
           info: "#25cef4",
           success: "#1f8974",
           warning: "#c98f08",
