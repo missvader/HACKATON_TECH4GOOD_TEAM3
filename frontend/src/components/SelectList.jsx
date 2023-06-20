@@ -1,6 +1,14 @@
+import ComerciosContext from "../context/ComerciosContext";
+import { useContext } from "react";
+
 const SelectList = () => {
+  const { selectedOption, handleOptionChange } = useContext(ComerciosContext);
   return (
-    <select className="select select-bordered border-primary w-full max-w-lg mt-5">
+    <select
+      className="select select-bordered border-primary w-full max-w-lg mt-5"
+      value={selectedOption}
+      onChange={handleOptionChange}
+    >
       <option disabled selected className="text-center">
         Selecciona el teu barri:
       </option>
