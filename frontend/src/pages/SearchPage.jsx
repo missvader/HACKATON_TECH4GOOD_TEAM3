@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
-import styles from "./Home.module.css";
+import Search from "../components/Search";
 
-const Home = () => {
+const SearchPage = () => {
   const [users, setUsers] = useState([]);
   useEffect(() => {
     async function fetchData() {
@@ -14,13 +14,13 @@ const Home = () => {
   }, []);
 
   return (
-    <main className={styles.main}>
-      <h1>Home</h1>
-      {users.map((user) => (
+    <main className="bg-secondary searchpage">
+      <Search />
+      {/*{users.map((user) => (
         <p key={user._id}>{user.name}</p>
-      ))}
+      ))}*/}
     </main>
   );
 };
 
-export default Home;
+export default SearchPage;
