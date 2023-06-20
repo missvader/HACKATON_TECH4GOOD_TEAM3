@@ -1,3 +1,5 @@
+import RestaurantIcon from "@mui/icons-material/Restaurant";
+
 const Badges = () => {
   return (
     <div className="badges-container flex space-x-2 my-8 flex-wrap w-4/5 ">
