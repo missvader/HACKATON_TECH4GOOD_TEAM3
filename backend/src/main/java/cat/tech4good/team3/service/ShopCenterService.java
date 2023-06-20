@@ -9,22 +9,6 @@ import java.util.List;
 
 @Service
 public class ShopCenterService {
-    @Autowired
-    ShopCenterRepo shopCenterRepo;
-    @Autowired
-    PriceEvolutionRepo priceEvolutionRepo;
-    @Autowired
-    GaleriaRepo galeriaRepo;
-    @Autowired
-    FiraRepo firaRepo;
-    @Autowired
-    MercatsRepo mercatsRepo;
-
-    public List<Mercat> getMercats(){
-return mercatsRepo.findAll();
-
-
-    }
 
 
 }
