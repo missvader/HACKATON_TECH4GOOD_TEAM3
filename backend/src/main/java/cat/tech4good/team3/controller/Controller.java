@@ -35,34 +35,34 @@ public class Controller {
             list.add(localsRepo.findByNomActivitat(nomActivitat));
         }
         if (nomSectorActivitat != null) {
-            list.add(localsRepo.findByNomActivitat(nomSectorActivitat));
+            list.add(localsRepo.findByNomSectorActivitat(nomSectorActivitat));
         }
         if (nomGrupActivitat != null) {
-            list.add(localsRepo.findByNomActivitat(nomGrupActivitat));
+            list.add(localsRepo.findByNomGrupActivitat(nomGrupActivitat));
         }
         if (nomLocal != null) {
-            list.add(localsRepo.findByNomActivitat(nomLocal));
+            list.add(localsRepo.findByNomLocal(nomLocal));
         }
         if (sNEix != null) {
-            list.add(localsRepo.findByNomActivitat(sNEix));
+            list.add(localsRepo.findBySNEix(sNEix));
         }
         if (latitud != null) {
-            list.add(localsRepo.findByNomActivitat(latitud));
+            list.add(localsRepo.findByLatitud(latitud));
         }
         if (longitud != null) {
-            list.add(localsRepo.findByNomActivitat(longitud));
+            list.add(localsRepo.findByLongitud(longitud));
         }
         if (direccioUnica != null) {
-            list.add(localsRepo.findByNomActivitat(direccioUnica));
+            list.add(localsRepo.findByDireccioUnica(direccioUnica));
         }
         if (nomVia != null) {
-            list.add(localsRepo.findByNomActivitat(nomVia));
+            list.add(localsRepo.findByNomVia(nomVia));
         }
         if (nomBarri != null) {
-            list.add(localsRepo.findByNomActivitat(nomBarri));
+            list.add(localsRepo.findByNomBarri(nomBarri));
         }
         if (nomDistricte != null) {
-            list.add(localsRepo.findByNomActivitat(nomDistricte));
+            list.add(localsRepo.findByNomDistricte(nomDistricte));
         }
         if (nomActivitat != null && nomSectorActivitat != null && nomGrupActivitat != null && nomLocal != null && sNEix != null && latitud != null
                 && longitud != null && direccioUnica != null && nomVia != null && nomBarri != null && nomDistricte != null) {
