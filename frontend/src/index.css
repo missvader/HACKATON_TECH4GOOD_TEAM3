@@ -1,6 +1,9 @@
 /* ----------------------------- 
         RESET
 ----------------------------- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   margin: 0;
@@ -26,14 +29,3 @@ select {
 /* ----------------------------- 
         GLOBAL
 ----------------------------- */
-
-:root {
-  --main-color: #e62633;
-  --dark-color: #181817;
-}
-
-body {
-  background: #e62633;
-  color: black;
-  font-family: "Inter", sans-serif;
-}
