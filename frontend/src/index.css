@@ -34,6 +34,9 @@ select {
   display: flex;
   justify-content: center;
 }
+.badge{
+  margin: 0.5rem;
+}
 /* HEADER */
 
 /* FOOTER */
