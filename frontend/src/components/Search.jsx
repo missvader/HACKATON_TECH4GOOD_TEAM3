@@ -3,8 +3,7 @@ import SelectList from "./SelectList";
 
 const Search = () => {
   return (
-    <div className="mt-5 ">
-      <div className="text-2xl text-black">Search</div>
+    <div className="search-options">
       <Badges />
       <SelectList />
     </div>
