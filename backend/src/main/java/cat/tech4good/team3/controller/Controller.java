@@ -27,7 +27,7 @@ public class Controller {
      @RequestParam (required = false) String calçat  @RequestBody String string**/) {
         List<Object> list = new ArrayList<>();
 
-
+      
         if (districte != null) {
             list.add(service.findByDistricte(districte));
         }
