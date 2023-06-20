@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 
 @RestController
@@ -21,7 +22,7 @@ public class Controller {
     LocalsRepo localsRepo;
 
     @GetMapping("/finder")
-    public List<Object> finder(@RequestParam(required = false) String nomSectorActivitat, @RequestParam(required = false) String nomActivitat,
+    public    List<Object>  finder(@RequestParam(required = false) String nomSectorActivitat, @RequestParam(required = false) String nomActivitat,
                                @RequestParam(required = false) String nomGrupActivitat, @RequestParam(required = false) String nomLocal,
                                @RequestParam(required = false) String sNEix, @RequestParam(required = false) String latitud,
                                @RequestParam(required = false) String longitud, @RequestParam(required = false) String direccioUnica,
@@ -69,6 +70,11 @@ public class Controller {
 
         }
 
+
+      /**  List<Object> resultado = list.stream()
+                .flatMap(o -> ((List<Object>) o).stream())
+                .map(Object::toString)
+                .collect(Collectors.toList());**/
 
         return list;
 
