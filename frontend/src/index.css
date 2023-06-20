@@ -29,12 +29,11 @@ select {
 /* ----------------------------- 
         GLOBAL
 ----------------------------- */
-<<<<<<< HEAD
 .searchpage{
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
 }
-=======
 /* HEADER */
 
 /* FOOTER */
->>>>>>> main
