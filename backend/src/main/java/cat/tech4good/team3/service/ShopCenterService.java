@@ -46,12 +46,13 @@ public class ShopCenterService {
 
 
     public List <Object> findByDistricte(String districte) {
-        List<Object> list = new ArrayList<>();
-        list.add(galeriaRepo.findByDistricte(districte));
-        list.add(firaRepo.findByDistricte(districte));
-        list.add(mercatsRepo.findByDistricte(districte));
 
-    return list;
 
+    return null;
+
+    }
+
+    public List<Object> findKey(String key) {
+        return null;
     }
 }
