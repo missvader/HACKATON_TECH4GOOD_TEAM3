@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Search from "../components/Search";
-
 const SearchPage = () => {
   const fakeData = [
     {
@@ -58,38 +57,42 @@ const SearchPage = () => {
       coordenadaY: 2.17781157944736,
     },
   ];
-  const [places, setPlaces] = useState([]);
-  /*useEffect(() => {
+  const [data, setData] = useState([]);
+  useEffect(() => {
     async function fetchData() {
-      const response = await fetch("http://localhost:3000/users");
+      const response = await fetch("http://localhost:3000/data");
       const data = await response.json();
       console.log(data);
-      setPlaces(data);
+      setData(data);
     }
     fetchData();
-  }, []);*/
-  useEffect(() => {
+  }, []);
+  /*useEffect(() => {
     // Simulación de la obtención de datos desde una API
     setPlaces(fakeData);
-  }, []);
+  }, []);*/
 
   return (
-    <main className="bg-white searchpage ">
-      <Search />
+    <div className="bg-white searchpage d-flex flex-col p-8 ">
+      <div className="col-span-1 ">
+        <Search />
+      </div>
       {/*{users.map((user) => (
         <p key={user._id}>{user.name}</p>
       ))}*/}
-      <div className="grid grid-cols-2 gap-4 mt-5">
-        {places.map((place) => (
-          <div className="bg-accent p-4 shadow" key={place.personalId}>
-            <h2 className="text-xl text-black font-bold">{place.mercat}</h2>
-            <p className="text-gray-700">{place.carrer}</p>
-            <p className="text-gray-700">{place.barri}</p>
-            <p className="text-gray-700">{place.districte}</p>
+      <div className=" gap-4 mt-5 col-span-2">
+        {data.map((data) => (
+          <div
+            className="bg-accent p-4 shadow mt-5 w-1/4 rounded-lg"
+            key={data.personalId}
+          >
+            <h2 className="text-xl text-black font-bold">{data.nomLocal}</h2>
+            <p className="text-gray-700">{data.nomVia}</p>
+            <p className="text-gray-700">{data.nomDistricte}</p>
           </div>
         ))}
       </div>
-    </main>
+    </div>
   );
 };
 

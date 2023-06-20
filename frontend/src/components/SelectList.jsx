@@ -2,7 +2,7 @@ const SelectList = () => {
   return (
     <select className="select select-bordered w-full max-w-xs">
       <option disabled selected>
-        Selecciona el teu districte:
+        Selecciona el teu barri:
       </option>
       <option>Ciutat Vella</option>
       <option>Eixample</option>
