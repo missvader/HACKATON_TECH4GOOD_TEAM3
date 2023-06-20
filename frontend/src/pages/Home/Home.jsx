@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import styles from "./Home.module.css";
 
 const Home = () => {
   const [users, setUsers] = useState([]);
