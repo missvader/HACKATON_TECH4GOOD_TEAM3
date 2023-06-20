@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import styles from "./Home.module.css";
+import Header from "../../components/Header/Header";
 
 const Home = () => {
   const [users, setUsers] = useState([]);
@@ -15,6 +15,7 @@ const Home = () => {
 
   return (
     <main className={styles.main}>
+      <Header />
       <h1>Home</h1>
       {users.map((user) => (
         <p key={user._id}>{user.name}</p>

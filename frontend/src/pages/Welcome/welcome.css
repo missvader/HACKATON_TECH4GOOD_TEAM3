@@ -1,0 +1,24 @@
+.welcome-title {
+  display: flex;
+  justify-content: center;
+  padding-top: 150px;
+  color: #e87e41;
+  font-size: 30px;
+}
+
+.welcome-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.welcome-button {
+  color: black;
+  width: 20%;
+}
+
+.button-container {
+  margin-top: 3%;
+  display: flex;
+  justify-content: center;
+}
