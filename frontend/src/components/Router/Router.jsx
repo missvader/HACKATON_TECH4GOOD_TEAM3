@@ -7,12 +7,10 @@ import Welcome from "../../pages/Welcome/Welcome";
 const Router = () => {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
         <Route path="/welcome" element={<Welcome />} />
         <Route path="/SearchPage" element={<Home />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 };
