@@ -73,7 +73,8 @@ const SearchPage = () => {
   }, []);*/
 
   return (
-    <main className="bg-white searchpage ">
+    <div className="search-page-container bg-white">
+      <h6 className="text-3xl text-black m-5 p-5">Què busques?</h6>
       <Search />
       {/*{users.map((user) => (
         <p key={user._id}>{user.name}</p>

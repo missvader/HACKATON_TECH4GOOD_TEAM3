@@ -29,12 +29,28 @@ select {
 /* ----------------------------- 
         GLOBAL
 ----------------------------- */
-.searchpage{
-  min-height: 100vh;
+
+.search-page-container {
+  height: 100vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.search-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.badges-container {
   display: flex;
   justify-content: center;
 }
-.badge{
+
+.badge {
   margin: 0.5rem;
 }
 /* HEADER */
