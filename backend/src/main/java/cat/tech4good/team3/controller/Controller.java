@@ -4,13 +4,11 @@ package cat.tech4good.team3.controller;
 import cat.tech4good.team3.model.dto.GenericResponseDto;
 import cat.tech4good.team3.service.ShopCenterService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+
 
 
 @RestController
@@ -20,11 +18,17 @@ public class Controller {
     ShopCenterService service;
 
 @GetMapping("/finder")
-public List<GenericResponseDto> finder(@RequestBody String string){
+public List<Object> finder(@RequestParam(required=false)String districte, @RequestBody String string){
+    List <Object> list = new ArrayList<>();
 
-    List<GenericResponseDto> answer = new ArrayList<>();
-    answer.add((GenericResponseDto) service.getMercats());
-    return answer ;
+
+    if(districte !=null){
+      list.add(  service.findByDistricte(districte));
+    }
+
+   list.add( service.finder(string));
+
+    return  list;
 
 }
 
