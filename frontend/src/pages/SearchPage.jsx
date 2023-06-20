@@ -73,10 +73,8 @@ const SearchPage = () => {
   }, []);*/
 
   return (
-    <div className="bg-white searchpage d-flex flex-col p-8 ">
-      <div className="col-span-1 ">
-        <Search />
-      </div>
+    <main className="bg-white searchpage ">
+      <Search />
       {/*{users.map((user) => (
         <p key={user._id}>{user.name}</p>
       ))}*/}

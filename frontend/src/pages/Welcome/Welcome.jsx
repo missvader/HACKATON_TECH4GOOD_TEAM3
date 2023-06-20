@@ -35,7 +35,7 @@ const Welcome = () => {
             <span ref={typedRef} />
           </h1>
           <div className="button-container">
-            <Link to="/SearchPage">
+            <Link to="/search">
               <button className="btn btn-lg btn-primary welcome-button shadow-xl">
                 cerca
               </button>
