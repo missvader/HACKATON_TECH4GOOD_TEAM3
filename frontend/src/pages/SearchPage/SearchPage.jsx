@@ -1,5 +1,5 @@
 import Header from "../../components/Header/Header";
-import SelectList from "../../components/selectList";
+import SelectList from "../../components/SelectList";
 
 const SearchPage = () => {
   return (

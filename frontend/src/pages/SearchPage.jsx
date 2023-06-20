@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Search from "../components/Search";
+import SelectList from "../components/SelectList";
 
 const SearchPage = () => {
   const fakeData = [
@@ -76,6 +77,7 @@ const SearchPage = () => {
   return (
     <main className="bg-white searchpage ">
       <Search />
+      <SelectList />
       {/*{users.map((user) => (
         <p key={user._id}>{user.name}</p>
       ))}*/}
