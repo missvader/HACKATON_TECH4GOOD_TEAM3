@@ -21,48 +21,58 @@ public class Controller {
     LocalsRepo localsRepo;
 
     @GetMapping("/finder")
-    public List<Object> finder(@RequestParam(required = false) String nomSectorActivitat ,@RequestParam (required = false) String nomActivitat,
-     @RequestParam (required = false) String nomGrupActivitat ,@RequestParam (required = false) String nomLocal,
-     @RequestParam (required = false) String sNEix,@RequestParam (required = false) String latitud,
-     @RequestParam (required = false) String longitud ,@RequestParam (required = false) String direccioUnica,
-     @RequestParam (required = false) String nomVia,@RequestParam (required = false) String nomBarri,
-     @RequestParam (required = false) String nomDistricte  ) {
+    public List<Object> finder(@RequestParam(required = false) String nomSectorActivitat, @RequestParam(required = false) String nomActivitat,
+                               @RequestParam(required = false) String nomGrupActivitat, @RequestParam(required = false) String nomLocal,
+                               @RequestParam(required = false) String sNEix, @RequestParam(required = false) String latitud,
+                               @RequestParam(required = false) String longitud, @RequestParam(required = false) String direccioUnica,
+                               @RequestParam(required = false) String nomVia, @RequestParam(required = false) String nomBarri,
+                               @RequestParam(required = false) String nomDistricte) {
 
         List<Object> list = new ArrayList<>();
 
-        if(nomActivitat !=null){
-        list.add(localsRepo.findByNomActivitat(nomActivitat));
+        if (nomActivitat != null) {
+            list.add(localsRepo.findByNomActivitat(nomActivitat));
         }
-        if(nomSectorActivitat !=null){
+        if (nomSectorActivitat != null) {
             list.add(localsRepo.findByNomActivitat(nomSectorActivitat));
-        }if(nomGrupActivitat !=null){
+        }
+        if (nomGrupActivitat != null) {
             list.add(localsRepo.findByNomActivitat(nomGrupActivitat));
-        }if(nomLocal !=null){
+        }
+        if (nomLocal != null) {
             list.add(localsRepo.findByNomActivitat(nomLocal));
-        }if(sNEix !=null){
+        }
+        if (sNEix != null) {
             list.add(localsRepo.findByNomActivitat(sNEix));
-        }if(latitud !=null){
+        }
+        if (latitud != null) {
             list.add(localsRepo.findByNomActivitat(latitud));
-        }if(longitud !=null){
+        }
+        if (longitud != null) {
             list.add(localsRepo.findByNomActivitat(longitud));
         }
-        if(direccioUnica !=null){
+        if (direccioUnica != null) {
             list.add(localsRepo.findByNomActivitat(direccioUnica));
-        }if(nomVia !=null){
+        }
+        if (nomVia != null) {
             list.add(localsRepo.findByNomActivitat(nomVia));
-        }if(nomBarri !=null){
+        }
+        if (nomBarri != null) {
             list.add(localsRepo.findByNomActivitat(nomBarri));
-        }if(nomDistricte !=null){
+        }
+        if (nomDistricte != null) {
             list.add(localsRepo.findByNomActivitat(nomDistricte));
         }
+        if (nomActivitat != null && nomSectorActivitat != null && nomGrupActivitat != null && nomLocal != null && sNEix != null && latitud != null
+                && longitud != null && direccioUnica != null && nomVia != null && nomBarri != null && nomDistricte != null) {
+            list.add("Introdueix dades!");
+
+        }
+
 
         return list;
 
     }
-
-
-
-
 
 
 }
