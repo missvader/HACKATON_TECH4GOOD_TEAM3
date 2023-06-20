@@ -11,7 +11,7 @@
 
 html,
 body {
-  height: 100%;
+  height: 100vh;
 }
 
 body {
@@ -31,7 +31,8 @@ select {
 ----------------------------- */
 
 .search-page-container {
-  height: 100vh;
+  max-height: 100vh;
+  overflow-y: scroll;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -52,7 +53,5 @@ select {
 
 .badge {
   margin: 0.5rem;
+  padding: 5%;
 }
-/* HEADER */
-
-/* FOOTER */
