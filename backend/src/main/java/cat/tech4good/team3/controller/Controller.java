@@ -13,6 +13,7 @@ import java.util.stream.Collectors;
 
 
 @RestController
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RequestMapping("/bcn")
 public class Controller {
     @Autowired
